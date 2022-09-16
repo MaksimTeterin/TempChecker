@@ -12,10 +12,10 @@ if (between(randomTemperature, 0, 20)) {
     console.log("-1")
 }
 
-if (between(randomTemperature, 20, 40)) {
+if (between(randomTemperature, 21, 40)) {
     console.log("0")
 }
 
-if (between(randomTemperature, 40, 60)) {
+if (between(randomTemperature, 41, 60)) {
     console.log("1")
 }
