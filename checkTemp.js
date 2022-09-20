@@ -1,21 +1,13 @@
-function getRandomTemperature(max) {
-    return Math.floor(Math.random() * max)
+function checkTemp(temp){
+if (temp >=0 && temp <=20){
+    console.log(-1) 
 }
-let randomTemperature = getRandomTemperature(60)
-console.log(randomTemperature)
-
-function between(randomTemperature, min, max) {
-    return randomTemperature >= min && randomTemperature <= max;
+else if (temp >=21 && temp <=40){ 
+    console.log(0) 
 }
-
-if (between(randomTemperature, 0, 20)) {
-    console.log("-1")
+else if (temp >=41 && temp <=60){
+    console.log(1) 
+}
 }
 
-if (between(randomTemperature, 21, 40)) {
-    console.log("0")
-}
-
-if (between(randomTemperature, 41, 60)) {
-    console.log("1")
-}
+checkTemp(41)
